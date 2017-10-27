@@ -2,7 +2,3 @@ logging:
   level: INFO
   loggers:
     com.haces.showoff: DEBUG
-
-template: Howdy, %s
-
-defaultName: Rodrigo

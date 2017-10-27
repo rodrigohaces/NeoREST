@@ -1,8 +1,6 @@
 package com.haces.showoff;
 
-import com.haces.showoff.health.TemplateHealthCheck;
 import com.haces.showoff.resources.EmployeeResource;
-import com.haces.showoff.resources.NeoRESTResource;
 
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
@@ -26,11 +24,9 @@ public class NeoRESTApplication extends Application<NeoRESTConfiguration> {
 
   @Override
   public void run(final NeoRESTConfiguration configuration, final Environment environment) {
-    final NeoRESTResource resource = new NeoRESTResource(configuration.getTemplate(), configuration.getDefaultName());
-    final TemplateHealthCheck healthCheck = new TemplateHealthCheck(configuration.getTemplate());
-    environment.healthChecks().register("template", healthCheck);
-    environment.jersey().register(resource);
+
     environment.jersey().register(new EmployeeResource());
+
   }
 
 }
