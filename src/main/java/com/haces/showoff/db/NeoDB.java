@@ -42,12 +42,16 @@ public class NeoDB {
     params.put("id", id);
     params.put("name", name);
 
-    Session session = driver.session();
-    Transaction tx = session.beginTransaction();
-
-    tx.run("CREATE (:Employee {id:$id, name:$name})", params);
-    tx.success();
-
+    try (Session session = driver.session()) {
+      try (Transaction tx = session.beginTransaction()) {
+        tx.run("CREATE (:Employee {id:$id, name:$name})", params);
+        tx.success();
+      } catch (Exception e) {
+        System.out.println("Exception " + e.toString());
+      }
+    } catch (Exception e) {
+      System.out.println("Exception " + e.toString());
+    }
     return employee;
   }
 
