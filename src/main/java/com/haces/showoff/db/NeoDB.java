@@ -26,7 +26,7 @@ public class NeoDB {
   public List<Employee> getEmployees() {
     List<Employee> employees = new ArrayList<Employee>();
     Session session = driver.session();
-    StatementResult result = session.run("MATCH (n:Employee) RETURN n.id, n.name LIMIT 25");
+    StatementResult result = session.run("MATCH (n:Employee) RETURN n.id, n.name ORDER BY n.id LIMIT 25");
 
     while (result.hasNext()) {
       Record record = result.next();
