@@ -39,11 +39,12 @@ public class EmployeeResource {
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Path("/Add")
-  public Employee add(@QueryParam("id") int employeeID, @QueryParam("name") String employeeName) {
+  public List<Employee>  add(@QueryParam("id") int employeeID, @QueryParam("name") String employeeName) {
 
     NeoDB neoDB = new NeoDB(neo4jURI, neo4jUsername, neo4jPassword);
-    Employee employee = neoDB.addEmployee(employeeID, employeeName);
+    neoDB.addEmployee(employeeID, employeeName);
+    List<Employee> employees = neoDB.getEmployees();
     neoDB.close();
-    return employee;
+    return employees;
   }
 }
