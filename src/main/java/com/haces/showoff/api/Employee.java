@@ -3,24 +3,25 @@ package com.haces.showoff.api;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Employee {
-  private int employeeID;
-  private String employeeName;
-  
-  public Employee () {
-    
+  private int id;
+
+  private String name;
+
+  public Employee() {
+
   }
-  
+
   public Employee(int employeeID, String employeeName) {
-    this.employeeID = employeeID;
-    this.employeeName = employeeName;
+    this.id = employeeID;
+    this.name = employeeName;
   }
-  
+
   @JsonProperty
-  public int getEmployeeID() {
-    return employeeID;
+  public int getId() {
+    return id;
   }
-  
-  public String getEmployeeName() {
-    return employeeName;
+
+  public String getName() {
+    return name;
   }
 }

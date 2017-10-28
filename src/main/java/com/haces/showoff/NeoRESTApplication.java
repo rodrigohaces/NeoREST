@@ -25,7 +25,8 @@ public class NeoRESTApplication extends Application<NeoRESTConfiguration> {
   @Override
   public void run(final NeoRESTConfiguration configuration, final Environment environment) {
 
-    environment.jersey().register(new EmployeeResource());
+    environment.jersey().register(new EmployeeResource(configuration.getNeo4jURI(), configuration.getNeo4jUsername(),
+        configuration.getNeo4jPassword()));
 
   }
 

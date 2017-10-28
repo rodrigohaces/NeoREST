@@ -2,3 +2,7 @@ logging:
   level: INFO
   loggers:
     com.haces.showoff: DEBUG
+
+neo4jURI: bolt://192.168.56.3:7687
+neo4jUsername: neo4j
+neo4jPassword: password
