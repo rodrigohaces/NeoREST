@@ -39,6 +39,10 @@ Creates an :Employee node. Receives 2 (mandatory) parameters: id and name
 curl "http://localhost:8080/Employee/Add?id=1&name=Rodrigo%20Haces"
 ```
 
+Video
+---
+See video demonstrating the solution [Here](https://youtu.be/_89Q8ugcqMk)
+
 Pentaho
 ---
 The solution includes a Pentaho front end that allows you to interact with NeoREST application with a simple front end.
