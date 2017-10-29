@@ -18,22 +18,22 @@ Usage
 ---
 The NeoREST application provides 2 operations:
 
-###/Employee/List (GET)
+### /Employee/List (GET)
 
 Returns all :Employee nodes (hard limited to 25)
 
 
-######Example cURL
+###### Example cURL
 
 ```
 curl "http://localhost:8080/Employee/List"
 ```
 
-###/Employee/Add (GET)
+### /Employee/Add (GET)
 
 Creates an :Employee node. Receives 2 (mandatory) parameters: id and name
 
-######Example cURL
+###### Example cURL
 
 ```
 curl "http://localhost:8080/Employee/Add?id=1&name=Rodrigo%20Haces"
@@ -43,12 +43,12 @@ Pentaho
 ---
 The solution includes a Pentaho front end that allows you to interact with NeoREST application with a simple front end.
 
-###Requirements
+### Requirements
 - Pentaho 7.1 CE installed and running
 - Pentaho knowledge
 - Direct connectivity between the Pentaho server and the NeoREST application
 
-###Deployment
+### Deployment
 - Download the NeoREST.zip (src/main/pentaho/NeoREST.zip) package.
 - Login into Pentaho
 - Via the Browse perspective, upload the NeoREST.zip package into /public
