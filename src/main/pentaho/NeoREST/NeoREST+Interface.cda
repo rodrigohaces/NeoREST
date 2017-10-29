@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><CDADescriptor>
+  <DataSources>
+    <Connection id="listEmployeesQry" type="kettle.TransFromFile">
+      <KtrFile>kettle/listEmployees.ktr</KtrFile>
+      <variables datarow-name="hostParam" variable-name="REST_HOST"/>
+    </Connection>
+    <Connection id="addEmployeeQuery" type="kettle.TransFromFile">
+      <KtrFile>kettle/addEmployee.ktr</KtrFile>
+      <variables datarow-name="hostParam" variable-name="REST_HOST"/>
+      <variables datarow-name="idParam" variable-name="ID_PARAM"/>
+      <variables datarow-name="nameParam" variable-name="NAME_PARAM"/>
+    </Connection>
+  </DataSources>
+  <DataAccess access="public" connection="listEmployeesQry" id="listEmployeesQry" type="kettle">
+    <Name>listEmployeesQry</Name>
+    <Cache duration="3600" enabled="false"/>
+    <Columns/>
+    <Parameters>
+      <Parameter default="192.168.56.1" name="hostParam" type="String"/>
+    </Parameters>
+    <Query><![CDATA[Output]]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="addEmployeeQuery" id="addEmployeeQuery" type="kettle">
+    <Name>addEmployeeQuery</Name>
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters>
+      <Parameter default="192.168.56.1" name="hostParam" type="String"/>
+      <Parameter default="0" name="idParam" type="Integer"/>
+      <Parameter default="Empty" name="nameParam" type="String"/>
+    </Parameters>
+    <Query><![CDATA[Output]]></Query>
+  </DataAccess>
+</CDADescriptor>

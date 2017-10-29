@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:ExportManifest xmlns:ns2="http://www.pentaho.com/schema/">
+    <ExportManifestInformation exportDate="28-10-2017 07:45:03 EDT" exportBy="admin" rootFolder="/public/" manifestVersion="2"/>
+    <ExportManifestEntity path="NeoREST">
+        <ExportManifestProperty>
+            <EntityMetaData name="NeoREST" createdDate="2017-10-28T13:11:53.628-04:00" isFolder="true" path="NeoREST" isHidden="false" isSchedulable="false" locale="en_US" title="NeoREST"/>
+        </ExportManifestProperty>
+        <ExportManifestProperty>
+            <EntityAcl>
+                <entriesInheriting>true</entriesInheriting>
+                <owner>admin</owner>
+                <ownerType>USER</ownerType>
+            </EntityAcl>
+        </ExportManifestProperty>
+    </ExportManifestEntity>
+    <ExportManifestEntity path="NeoREST/NeoREST Interface.cda">
+        <ExportManifestProperty>
+            <EntityMetaData name="NeoREST Interface.cda" createdDate="2017-10-28T13:35:39.667-04:00" isFolder="false" path="NeoREST/NeoREST Interface.cda" isHidden="false" isSchedulable="true" locale="en_US" title="NeoREST Interface.cda"/>
+        </ExportManifestProperty>
+        <ExportManifestProperty>
+            <EntityAcl>
+                <entriesInheriting>true</entriesInheriting>
+                <owner>admin</owner>
+                <ownerType>USER</ownerType>
+            </EntityAcl>
+        </ExportManifestProperty>
+    </ExportManifestEntity>
+    <ExportManifestEntity path="NeoREST/NeoREST Interface.cdfde">
+        <ExportManifestProperty>
+            <EntityMetaData name="NeoREST Interface.cdfde" createdDate="2017-10-28T13:12:24.324-04:00" isFolder="false" path="NeoREST/NeoREST Interface.cdfde" isHidden="false" isSchedulable="true" locale="en_US" title="NeoREST Interface.cdfde"/>
+        </ExportManifestProperty>
+        <ExportManifestProperty>
+            <EntityAcl>
+                <entriesInheriting>true</entriesInheriting>
+                <owner>admin</owner>
+                <ownerType>USER</ownerType>
+            </EntityAcl>
+        </ExportManifestProperty>
+    </ExportManifestEntity>
+    <ExportManifestEntity path="NeoREST/NeoREST Interface.wcdf">
+        <ExportManifestProperty>
+            <EntityMetaData name="NeoREST Interface.wcdf" createdDate="2017-10-28T13:12:24.308-04:00" isFolder="false" path="NeoREST/NeoREST Interface.wcdf" isHidden="false" isSchedulable="true" locale="en_US" description="NeoREST Interface" title="NeoREST Interface"/>
+        </ExportManifestProperty>
+        <ExportManifestProperty>
+            <EntityAcl>
+                <entriesInheriting>true</entriesInheriting>
+                <owner>admin</owner>
+                <ownerType>USER</ownerType>
+            </EntityAcl>
+        </ExportManifestProperty>
+    </ExportManifestEntity>
+    <ExportManifestEntity path="NeoREST/kettle">
+        <ExportManifestProperty>
+            <EntityMetaData name="kettle" createdDate="2017-10-28T13:34:06.733-04:00" isFolder="true" path="NeoREST/kettle" isHidden="false" isSchedulable="false" locale="en_US" title="kettle"/>
+        </ExportManifestProperty>
+        <ExportManifestProperty>
+            <EntityAcl>
+                <entriesInheriting>true</entriesInheriting>
+                <owner>admin</owner>
+                <ownerType>USER</ownerType>
+            </EntityAcl>
+        </ExportManifestProperty>
+    </ExportManifestEntity>
+    <ExportManifestEntity path="NeoREST/kettle/addEmployee.ktr">
+        <ExportManifestProperty>
+            <EntityMetaData name="addEmployee.ktr" createdDate="2017-10-28T15:15:49.698-04:00" isFolder="false" path="NeoREST/kettle/addEmployee.ktr" isHidden="true" isSchedulable="true" locale="en_US" title="addEmployee"/>
+        </ExportManifestProperty>
+        <ExportManifestProperty>
+            <EntityAcl>
+                <entriesInheriting>true</entriesInheriting>
+                <owner>admin</owner>
+                <ownerType>USER</ownerType>
+            </EntityAcl>
+        </ExportManifestProperty>
+    </ExportManifestEntity>
+    <ExportManifestEntity path="NeoREST/kettle/listEmployees.ktr">
+        <ExportManifestProperty>
+            <EntityMetaData name="listEmployees.ktr" createdDate="2017-10-28T13:34:26.490-04:00" isFolder="false" path="NeoREST/kettle/listEmployees.ktr" isHidden="true" isSchedulable="true" locale="en_US" title="listEmployees"/>
+        </ExportManifestProperty>
+        <ExportManifestProperty>
+            <EntityAcl>
+                <entriesInheriting>true</entriesInheriting>
+                <owner>admin</owner>
+                <ownerType>USER</ownerType>
+            </EntityAcl>
+        </ExportManifestProperty>
+    </ExportManifestEntity>
+</ns2:ExportManifest>
