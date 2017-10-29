@@ -38,3 +38,22 @@ Creates an :Employee node. Receives 2 (mandatory) parameters: id and name
 ```
 curl "http://localhost:8080/Employee/Add?id=1&name=Rodrigo%20Haces"
 ```
+
+Pentaho
+---
+The solution includes a Pentaho front end that allows you to interact with NeoREST application with a simple front end.
+
+###Requirements
+- Pentaho 7.1 CE installed and running
+- Pentaho knowledge
+- Direct connectivity between the Pentaho server and the NeoREST application
+
+###Deployment
+- Download the NeoREST.zip (src/main/pentaho/NeoREST.zip) package.
+- Login into Pentaho
+- Via the Browse perspective, upload the NeoREST.zip package into /public
+- Open in Edit mode the `/public/NeoREST/NeoREST Interface.wcdf` CDE
+- Modify the Property Value of the `hostParam`
+ Simple Parameter to point to the host of the NeoREST application
+- Modify the value of the `hostParam` Parameter to point to the host of the NeoREST application in the two kettle Datasources (listEmployeeQuery and addEmployeeQuery)
+- Open the `/public/NeoREST/NeoREST Interface.wcdf` CDE
